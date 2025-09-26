@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background-img {
+    background: linear-gradient(0deg, rgb(218, 197, 116) 0%, rgb(218, 197, 116) 7.692%, rgb(217, 182, 86) 7.692%, rgb(217, 182, 86) 15.385%, rgb(213, 163, 55) 15.385%, rgb(213, 163, 55) 23.077%, rgb(208, 143, 23) 23.077%, rgb(208, 143, 23) 30.769%, rgb(200, 121, 0) 30.769%, rgb(200, 121, 0) 38.462%, rgb(190, 97, 0) 38.462%, rgb(190, 97, 0) 46.154%, rgb(178, 72, 0) 46.154%, rgb(178, 72, 0) 53.846%, rgb(165, 47, 0) 53.846%, rgb(165, 47, 0) 61.538%, rgb(150, 22, 0) 61.538%, rgb(150, 22, 0) 69.231%, rgb(134, 0, 0) 69.231%, rgb(134, 0, 0) 76.923%, rgb(116, 0, 0) 76.923%, rgb(116, 0, 0) 84.615%, rgb(98, 0, 0) 84.615%, rgb(98, 0, 0) 92.308%, rgb(80, 0, 0) 92.308%, rgb(80, 0, 0) 100%);
+    background-position: center center;
+    background-repeat: repeat;
+    box-sizing: border-box;
+    max-width: 100vw;
+
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.container {
+
+    margin: 40px;
+    background-color: rgba(0, 0, 0, 0.268);
+    /* black with 50% transparency */
+    background: rgba(255, 255, 255, 0.138);
+    /* white with transparency */
+    backdrop-filter: blur(8px);
+    /* apply blur behind element */
+    -webkit-backdrop-filter: blur(10px);
+    /* for Safari */
+    width: 400px;
+    height: 830px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+
+}
+
+.name {
+    border-radius: 20px;
+    padding: 6px;
+    background: transparent;
+    /* makes it transparent */
+    border: 2px solid #ffffff4e;
+    /* optional: white border */
+    color: #e9c6c6;
+    font-weight: bold;
+    /* text color */
+    padding: 10px 15px;
+    border-radius: 25px;
+    /* rounded corners */
+    outline: none;
+}
+
+.name::placeholder {
+    color: rgba(255, 255, 255, 0.707);
+    /* transparent-ish placeholder */
+}
+
+.email {
+    margin-top: 5px;
+    border-radius: 20px;
+    padding: 6px;
+    background: transparent;
+    /* makes it transparent */
+    border: 2px solid #ffffff4e;
+    /* optional: white border */
+    color: #e9c6c6;
+    font-weight: bold;
+    /* text color */
+    padding: 10px 15px;
+    border-radius: 25px;
+    /* rounded corners */
+    outline: none;
+}
+
+.email::placeholder {
+    color: rgba(255, 255, 255, 0.707);
+    /* transparent-ish placeholder */
+}
+
+.age {
+    margin-top: 5px;
+    border-radius: 20px;
+    padding: 6px;
+    background: transparent;
+    /* makes it transparent */
+    border: 2px solid #ffffff4e;
+    /* optional: white border */
+    color: #e9c6c6;
+    font-weight: bold;
+    /* text color */
+    padding: 10px 15px;
+    border-radius: 25px;
+    /* rounded corners */
+    outline: none;
+}
+
+.age::placeholder {
+    color: rgba(255, 255, 255, 0.707);
+    /* transparent-ish placeholder */
+}
+
+.form-control {
+    margin: 3px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.roleof {
+    gap: 10px;
+}
+
+.role-label {
+    font-weight: bolder;
+    font-family: sans-serif;
+    color: rgba(255, 255, 255, 0.699);
+}
+
+.role-select {
+    padding: 7px 10px;
+    border-radius: 40px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.384);
+
+}
+
+.role-option {
+    background-color: rgba(0, 0, 0, 0.268);
+    /* black with 50% transparency */
+    background: rgba(255, 255, 255, 0.138);
+    /* white with transparency */
+    backdrop-filter: blur(8px);
+    /* apply blur behind element */
+    -webkit-backdrop-filter: blur(8px);
+    /* for Safari */
+}
+
+/* Hover effect */
+.role-select:hover {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+/* Focus (when clicked / active) */
+.role-select:focus {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Dropdown options */
+.role-option {
+    background: #222;
+    /* solid dark background so text is readable */
+    color: #fff;
+}
+
+.radio-div {
+    margin: 10px auto;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.733);
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.checkbox-div {
+    color: rgba(255, 255, 255, 0.775);
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-weight: bold;
+    gap: 10px;
+}
+.tickbox-checkbox-div {
+    display: flex;
+    flex-direction: column;
+}
+  
+.specific-tickbox {
+    margin: 2px 0px;
+}
+
+.suggestions-div {
+    display: flex;
+    flex-direction: column;
+
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: small;
+    margin: 8px 0px;
+    color: rgba(0, 0, 0, 0.838);
+    
+}
+.textarea-suggestions-div {
+    /* font-size: small; */
+    margin-top: 10px;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.261);
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.textarea-suggestions-div:hover {
+    color: rgba(0, 0, 0, 0.868);
+}
+
+.button-div {
+    margin-top: 20px;
+    padding: 5px 20px;
+    font-size: large;
+    background: transparent;
+    border-radius: 30px;
+    color: rgb(19, 18, 18);
+    border: 3px solid rgb(4, 4, 4); 
+    font-weight: bold;
+
+}
+.button-div:hover {
+    background-color: rgb(4, 4, 4);
+    color: white;
+    font-weight: bolder;
+}
